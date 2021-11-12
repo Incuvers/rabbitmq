@@ -7,3 +7,5 @@ LABEL Christian Sargusingh "https://github.com/cSDes1gn"
 ADD rmq/rabbitmq.conf /etc/rabbitmq/
 ADD rmq/definitions.json /etc/rabbitmq/
 ADD rmq/enabled_plugins /etc/rabbitmq/
+
+CMD ["rabbitmq-server"]
