@@ -8,7 +8,7 @@ Modified: 2021-11
 ## Usage
 Incuvers/rabbitmq extends the RabbitMQ management broker including custom initialization declarations and plugins. From github container registry:
 ```bash
-docker pull 
+docker pull ghcr.io/incuvers/rabbitmq:master
 ```
 
 Or integrate the container in any compose stack:
@@ -16,7 +16,7 @@ Or integrate the container in any compose stack:
 services:
   rmq:
     container_name: rmq
-    image: 
+    image: ghcr.io/incuvers/rabbitmq:master
     ports:
       # expose for rmq management client
       - "15672:15672"
