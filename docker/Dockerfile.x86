@@ -1,6 +1,6 @@
 FROM rabbitmq:3.9-management
 
-LABEL version="1.0.0"
+LABEL version="x86v1.0.0"
 LABEL Christian Sargusingh "https://github.com/cSDes1gn"
 
 # package incuvers custom config
