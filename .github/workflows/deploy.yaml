@@ -30,8 +30,10 @@ jobs:
         with:
           flavor: |
             latest=auto
-            prefix=${{ matrix.arch }}
+            prefix=
             suffix=
+          tags: |
+            type=raw,value=${{ matrix.arch }}
           images: |
             ghcr.io/${{ github.repository }}
       - name: Build and push ${{ matrix.arch }} images
