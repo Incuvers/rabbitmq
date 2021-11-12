@@ -6,9 +6,9 @@
 Modified: 2021-11
 
 ## Usage
-Incuvers/rabbitmq extends the RabbitMQ management broker including custom initialization declarations and plugins. From github container registry:
+Incuvers/rabbitmq extends the RabbitMQ management broker including custom initialization declarations and plugins. he image is packaged for arm64 and x86 systems, simply reference using the `arm64` or `x86` tags. From github container registry:
 ```bash
-docker pull ghcr.io/incuvers/rabbitmq:master
+docker pull ghcr.io/incuvers/rabbitmq:arm64
 ```
 
 Or integrate the container in any compose stack:
@@ -16,7 +16,7 @@ Or integrate the container in any compose stack:
 services:
   rmq:
     container_name: rmq
-    image: ghcr.io/incuvers/rabbitmq:master
+    image: ghcr.io/incuvers/rabbitmq:arm64
     ports:
       # expose for rmq management client
       - "15672:15672"
