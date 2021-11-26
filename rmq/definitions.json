@@ -57,6 +57,13 @@
       "durable": false,
       "auto_delete": true,
       "arguments": {}
+    },
+    {
+      "name": "isr",
+      "vhost": "/",
+      "durable": false,
+      "auto_delete": true,
+      "arguments": {}
     }
   ],
   "bindings": [
@@ -74,6 +81,14 @@
       "destination": "command",
       "destination_type": "queue",
       "routing_key": "device.command",
+      "arguments": {}
+    },
+    {
+      "source": "device",
+      "vhost": "/",
+      "destination": "isr",
+      "destination_type": "queue",
+      "routing_key": "device.isr",
       "arguments": {}
     }
   ]
